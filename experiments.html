@@ -19,6 +19,47 @@
         </nav>
     </header>
 
-    <p>exp</p>
+    <h1>Experiments (I will prune this tab later)</h1>
+
+    <hr>
+
+    <h2>Canvas Japanese Flag</h2>
+    <canvas id="japaneseFlag" width="200" height="110" style="border:1px solid #b9b9b9;">
+        Sorry, your browser doesn't support this canvas element.
+    </canvas> 
+    <script>
+        var canvas = document.getElementById('japaneseFlag');
+        var context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 32;
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = 'red';
+        context.fill();
+        context.strokeStyle = '#ff0000';
+        context.stroke();
+    </script> 
+
+    <hr>
+
+    <h2>Code Snippet</h2>
+
+    <hr>
+
+    <h2>iframe of page from Homework 1</h2>
+    <iframe src="https://heartfelt-souffle-ee6e31.netlify.app/" title="Homework 1 Site Embedded" height="300" width="800"></iframe>
+
+    <hr>
+
+    <h2>The "Shoryuken!" Sound Effect from Street Fighter</h2>
+    <audio controls>
+        <source src="media/shoryuken_sound_effect.mp3" type="audio/mp3">
+      Sorry, your browser doesn't support this audio element.
+    </audio>
+
+    <hr>
+
 </body>
 </html>
