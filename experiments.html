@@ -44,7 +44,19 @@
 
     <hr>
 
-    <h2>Code Snippet</h2>
+    <h2>Python Code Snippet</h2>
+    <pre><code>
+        import pandas as pd
+
+        data = {
+          "calories": [420, 380, 390],
+          "duration": [50, 40, 45]
+        }
+        
+        #load data into a DataFrame object:
+        df = pd.DataFrame(data)
+        
+        print(df) </code></pre>
 
     <hr>
 
@@ -60,6 +72,35 @@
     </audio>
 
     <hr>
+
+    <h2>Template Tag Example</h2>
+    <p>You can see this text!</p>
+    <template><p>You can't see this text though!</p></template>
+
+    <hr>
+
+    <h2>SVG Red Square</h2>
+    <p> This is a red square
+        <span>
+            <svg width="100" height="100">
+                <rect width="100" height="100" style="fill:rgb(255, 0, 0);" />
+            </svg>
+        </span>
+    </p>
+
+    <hr>
+
+    <h2>Aside Example</h2>
+
+    <section>
+        <p>Cats are very soft and very nice. There are many different types of cats around the world</p>
+        <aside><p>Dogs are also wonderful pets.</p></aside>
+        <p>Resuming the feline discussion, cats are very wonderful companions.</p>
+    </section>
+
+    <hr>
+
+    
 
 </body>
 </html>
